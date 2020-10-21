@@ -1,0 +1,43 @@
+.container {
+  margin: 0 auto;
+  width: 500px;
+  height: 55%;
+  background-color: #0c0c0ccc;
+  color: white;
+  form {
+    @include flexCenter();
+    width: 100%;
+    height: 100%;
+
+    .title {
+      height: 30%;
+      width: 80%;
+      @include flexCenter();
+      h3 {
+        font-size: 30px;
+        margin: 0;
+      }
+    }
+
+    .inputs {
+      width: 80%;
+      height: 70%;
+      @include flexCenter();
+      label,
+      input {
+        padding: 10px;
+        padding-left: 0;
+        width: 250px;
+        text-align: left;
+      }
+      input {
+        border: none;
+        border-radius: 25px;
+        padding: 10px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
