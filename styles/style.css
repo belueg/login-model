@@ -44,6 +44,7 @@ body {
 .container form .inputs {
   width: 80%;
   height: 70%;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,13 +59,33 @@ body {
   text-align: left;
 }
 
-.container form .inputs input {
+.container form .inputs input,
+.container form .inputs button {
   border: none;
   border-radius: 25px;
   padding: 10px;
 }
 
-.container form .inputs input:focus {
+.container form .inputs input:focus,
+.container form .inputs button:focus {
   outline: none;
+}
+
+.container form .inputs button {
+  width: 270px;
+  margin-top: 25px;
+  color: white;
+  background-color: #fb3d3d;
+  font-size: 16px;
+}
+
+.container form .inputs .forgot-password {
+  width: 270px;
+  margin: 20px;
+}
+
+.container form .inputs .forgot-password a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
