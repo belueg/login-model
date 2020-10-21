@@ -1,0 +1,14 @@
+header {
+  height: 90px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 20px;
+  @include flexCenter();
+  align-items: flex-start;
+  h2 {
+    margin: 0;
+    text-shadow: -3px 1px 5px #1f1e1e;
+  }
+}

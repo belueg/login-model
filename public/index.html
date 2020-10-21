@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Example</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+      <h2>Education Platform
+      </h2>
+    </header>
+      <div class="container" id="whenSignedOut">
+        <!-- login form -->
+        <form>
+          <div class="title">
+            <h3 class="title-tag">Login</h3>
+          </div>
+          <div class="inputs">
+            <label for="username"> <b>Email</b></label>
+            <input type="text" placeholder="Enter your email" name="email" id="email" required>
+            <label for="pass"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pass" id="pass" required>
+
+            <button type="button" id="signInBtn">
+              <a href="userprofile.html"><b>Sign in</b></a>
+            </button>
+
+
+            <!-- <label for="remember">
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label> -->
+            <span class="forgot-password"><a href="#">Forgot password?</a></span>
+
+
+          </div>
+
+
+        </form>
+
+    </div>
+    <!-- <section id="whenSignedIn">
+      <div id="userDetails"></div>
+
+      <button id="signOutBtn">Sign out</button>
+    </section> -->
+  </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+  <script>
+   
+  <script src="./app.js" defer></script>
+
+</html>
