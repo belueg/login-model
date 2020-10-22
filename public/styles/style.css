@@ -112,6 +112,37 @@ header h2 {
   color: white;
 }
 
+@media screen and (max-width: 415px) {
+  .container {
+    width: 100vw;
+  }
+  .container form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .container form .title h3 {
+    font-size: 22px;
+  }
+  .container form .inputs input,
+  .container form .inputs label {
+    width: 220px;
+    padding: 6px;
+  }
+  .container form .inputs button {
+    width: 235px;
+    padding: 6px;
+    margin-top: 20px;
+  }
+  .container form .inputs .forgot-password {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
 .loader_coffee {
   background: burlywood;
   height: 105px;
@@ -157,7 +188,7 @@ header h2 {
   text-align: center;
   opacity: 0;
   display: none;
-  transition: opacity 2s ease-in;
+  transition: opacity 1.5s;
   color: #fff;
   text-shadow: -3px 1px 5px #1f1e1e;
   width: 70%;
@@ -190,5 +221,21 @@ header h2 {
 .userProfile-container .main .buttons button:hover {
   background-color: #d4d0ca;
   cursor: pointer;
+}
+
+.userProfile-container .main .buttons button a {
+  text-decoration: none;
+  color: gray;
+}
+
+@media screen and (max-width: 321px) {
+  .userProfile-container .main h1 {
+    font-size: 28px;
+  }
+  .userProfile-container .main .buttons button {
+    font-size: 14px;
+    padding: 8px;
+    margin: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
