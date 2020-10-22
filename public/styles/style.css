@@ -6,6 +6,11 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   height: 90px;
   width: 100%;
@@ -98,20 +103,10 @@ header h2 {
   font-size: 16px;
 }
 
-.container form .inputs button a {
-  text-decoration: none;
-  color: white;
-}
-
 .container form .inputs .login-spans {
   width: 270px;
   margin: 20px;
   margin-bottom: 0px;
-}
-
-.container form .inputs .login-spans a {
-  text-decoration: none;
-  color: white;
 }
 
 .container form .inputs .create-account {
@@ -253,7 +248,6 @@ header h2 {
 }
 
 .userProfile-container .main .buttons button a {
-  text-decoration: none;
   color: gray;
 }
 
@@ -265,6 +259,118 @@ header h2 {
     font-size: 14px;
     padding: 8px;
     margin: 5px;
+  }
+}
+
+.container-signup {
+  margin: 0 auto;
+  width: 450px;
+  height: calc(100vh - 90px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-signup form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0c0c0ccc;
+  width: 100%;
+  height: 70%;
+}
+
+.container-signup form .title-signup {
+  height: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.container-signup form .title-signup h3 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.container-signup form .inputs-signup {
+  width: 90%;
+  height: 80%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-signup form .inputs-signup label,
+.container-signup form .inputs-signup input {
+  padding: 10px;
+  padding-left: 0;
+  width: 250px;
+  text-align: left;
+}
+
+.container-signup form .inputs-signup input,
+.container-signup form .inputs-signup button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.container-signup form .inputs-signup input:focus,
+.container-signup form .inputs-signup button:focus {
+  outline: none;
+}
+
+.container-signup form .inputs-signup button {
+  width: 270px;
+  margin-top: 25px;
+  background-color: #fb3d3d;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 415px) {
+  .container-signup {
+    width: 100vw;
+  }
+  .container-signup form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container-signup form .title h3 {
+    font-size: 22px;
+  }
+  .container-signup form .inputs-signup input,
+  .container-signup form .inputs-signup label {
+    width: 200px;
+    padding: 6px;
+  }
+  .container-signup form .inputs-signup button {
+    width: 215px;
+    padding: 6px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container-signup form .inputs input,
+  .container-signup form .inputs label {
+    width: 200px;
+    padding: 6px;
+  }
+  .container-signup form .inputs button {
+    width: 215px;
+    padding: 4px;
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
