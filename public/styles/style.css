@@ -47,12 +47,13 @@ header h2 {
 }
 
 .container form .title {
-  height: 30%;
+  height: 20%;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .container form .title h3 {
@@ -62,7 +63,7 @@ header h2 {
 
 .container form .inputs {
   width: 80%;
-  height: 70%;
+  height: 80%;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -102,12 +103,13 @@ header h2 {
   color: white;
 }
 
-.container form .inputs .forgot-password {
+.container form .inputs .login-spans {
   width: 270px;
   margin: 20px;
+  margin-bottom: 0px;
 }
 
-.container form .inputs .forgot-password a {
+.container form .inputs .login-spans a {
   text-decoration: none;
   color: white;
 }
@@ -119,9 +121,15 @@ header h2 {
   .container form {
     width: 80%;
   }
+  .container form .inputs span {
+    font-size: 14px;
+  }
+  .container form .inputs .create-account {
+    margin-top: 8px;
+  }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 375px) {
   .container form .title h3 {
     font-size: 22px;
   }
@@ -133,13 +141,30 @@ header h2 {
   .container form .inputs button {
     width: 235px;
     padding: 6px;
+    font-size: 15px;
     margin-top: 20px;
   }
-  .container form .inputs .forgot-password {
+  .container form .inputs .login-spans {
     margin: 0;
     margin-top: 10px;
     font-size: 14px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container form .inputs input,
+  .container form .inputs label {
+    width: 200px;
+    padding: 6px;
+  }
+  .container form .inputs button {
+    width: 215px;
+    padding: 4px;
+    margin-top: 20px;
+  }
+  .container form .inputs .login-spans {
+    font-size: 13px;
   }
 }
 
