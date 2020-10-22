@@ -114,6 +114,10 @@ header h2 {
   color: white;
 }
 
+.container form .inputs .create-account {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 415px) {
   .container {
     width: 100vw;
